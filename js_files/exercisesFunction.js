@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <script>
 //task 1-exemplar 1:
 
    /*     function calculator( num1, simbol, num2) { 
@@ -93,49 +83,43 @@ switch (simbol) {
         } 
       console.log(evenNumber(9)); */
 //task 5
-        function argType(param) {
-           var typeObjekt = {
-               arg1: 1 ,
-               arg2: "string" ,
-               arg3: true ,
-               arg4: undefined ,
-               arg5: null ,
-              
-               
-           }
-            for (var key in typeObjekt){
-              if ( typeof typeObjekt[key] == typeof(param)) {
-                   return  typeof typeObjekt[key];
-              }
+function argType(param) {
+    var typeObjekt = {
+        arg1: 1 ,
+        arg2: "string" ,
+        arg3: true ,
+        arg4: undefined ,
+        arg5: null ,
+       
+        
+    }
+     for (var key in typeObjekt){
+       if ( typeof typeObjekt[key] == typeof(param)) {
+            return  typeof typeObjekt[key];
+       }
 
-            }   
-             
-       } 
-              console.log(argType(undefined));        
+     }   
+      
+} 
+       console.log(argType(undefined));        
 
 
 //task 6   
-     /*function personDate( lastname, name, gender, age ) {
-         var customer = {};
-         customer.lastname = lastname;
-         customer.name = name;
-         customer.gender = gender;
-         customer.age = age;
-         
-     return customer;
-     }   
+function personDate( lastname, name, gender, age ) {
+  var customer = {};
+  customer.lastname = lastname;
+  customer.name = name;
+  customer.gender = gender;
+  customer.age = age;
+  
+return customer;
+}   
 
-       console.log(personDate("Grigoryan" ,"Ani", "women", 20)); 
+console.log(personDate("Grigoryan" ,"Ani", "women", 20)); 
 //task 7
-    function square(number){
-        return number**2;
-    }
-      console.log(square(5));  */
-       
-           
+function square(number){
+ return number**2;
+}
+console.log(square(5));  
 
     typeof 5 =="number"
-
-        </script>
-</body>
-</html>
